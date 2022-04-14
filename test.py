@@ -1,4 +1,5 @@
 import requests
+import requests_to_curl
 
 
 data = {
@@ -10,4 +11,6 @@ data = {
 
 req = requests.post("http://api-server/posts", data=data)
 
-print(req.status_code)
+test = requests_to_curl.parse(req)
+
+print(test)
