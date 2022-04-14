@@ -8,6 +8,22 @@
         - PUT Method: this method is used to apply modifications 
         - PATCH Method: this method is used to apply partial modifications to a resource
 
+```python 
+
+        import requests
+
+        data = {
+            "title": "Titre Test",
+            "content": "Entretien à Djamo",
+            "authorId": 342,
+            "isPublished": True,
+        }
+
+        req = requests.post("http://api-server/posts", data=data)
+
+        print(req.status_code)
+```
+
 ### 2:
 
     2-a : 
